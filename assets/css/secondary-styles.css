@@ -1,0 +1,15 @@
+.hero {
+    margin: 20px;
+    background-color: white;
+    font-size: 20px;
+    color: blue;
+    background-position: bottom;
+    height: auto;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .hero-secondary {
+    background-color: black;
+    color: red;
+  }
