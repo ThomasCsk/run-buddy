@@ -1,37 +1,69 @@
+/*General changes*/
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-/* MEDIA QUERY FOR SMALL DESKTOP AND SMALLER*/
-@media screen and (max-width: 980px) {
-    header h1 a {
-      /* this will be applied on any screen smaller than 980px */
-      color: tomato;
-    }
-  }
-  
-  /* MEDIA QUERY FOR TABLETS AND SMALLER */
-  @media screen and (max-width: 768px) {
-    header h1 {
-      /* this will be applied on any screen between 768px and 575px */
-      font-size: 80px;
-    }
-  }
-  
-  /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
-  @media screen and (max-width: 575px) {
-    header h1 {
-      /* this will be applied on any screen smaller than 575px */
-      font-size: 100px;
-    }
-  }
-
 body {
     color: #39a6b2;
     font-family: Helvetica, Arial, sans-serif;
 }
+
+section {
+    padding: 60px;
+}
+
+.section-title {
+    font-size: 48px;
+    color: #024e76;
+    border-bottom: 3px solid;
+    padding-bottom: 20px;
+    text-align: center;
+    margin: 0 auto 35px auto;
+    width: 50%;
+}
+
+.primary-border{
+    border-color: #fce138;
+}
+.secondary-border{
+    border-color: #39a6b2;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.flex-row {
+    display: flex;
+}
+
+/*Media Queries*/
+
+@media screen and (max-width: 980px) {
+    header h1 a {
+    color: tomato;
+    }
+}
+  
+@media screen and (max-width: 768px) {
+    header h1 {
+    font-size: 80px;
+    }
+}
+  
+@media screen and (max-width: 575px) {
+    header h1 {
+    font-size: 100px;
+    }
+}
+
+/*Header*/
 
 header {
     padding: 20px 35px;
@@ -71,6 +103,8 @@ header nav ul li a {
     font-size: 1.55vw;
 }
 
+/*Footer*/
+
 footer {
     background-color: #fce138;
     width: 100%;
@@ -95,9 +129,7 @@ footer a {
     color: #024e76;
 }
 
-section {
-    padding: 60px;
-}
+/*Hero/Jumbotron*/
 
 .hero {
     background-image: url(C:Users/timus/OneDrive/Desktop/BOOTCAMP/projects/run-buddy/assets/images/hero-bg.jpg);
@@ -167,6 +199,8 @@ section {
     font-size: 16px;
 }
 
+/*What We Do*/
+
 .intro p {
     line-height: 1.7;
     color: #39a6b2;
@@ -176,22 +210,7 @@ section {
     text-align: center;
 }
 
-.section-title {
-    font-size: 48px;
-    color: #024e76;
-    border-bottom: 3px solid;
-    padding-bottom: 20px;
-    text-align: center;
-    margin: 0 auto 35px auto;
-    width: 50%;
-}
-
-.primary-border{
-    border-color: #fce138;
-}
-.secondary-border{
-    border-color: #39a6b2;
-}
+/*What You Do*/
 
 .steps {
     background: #fce138;
@@ -245,6 +264,8 @@ section {
     max-width: 100%;
 }
 
+/*Meet the Trainers*/
+
 .trainer {
     margin: 20px;
     background: #024e76;
@@ -269,14 +290,6 @@ section {
     justify-content: space-around;
   }
 
-.text-left {
-    text-align: left;
-}
-
-.text-right {
-    text-align: right;
-}
-
 .trainer-bio h3 {
     font-size: 28px;
 }
@@ -290,6 +303,8 @@ section {
 .trainer-bio p {
     font-size: 17px;
 }
+
+/*Reach Out*/
 
 .contact {
     background: #024e76;
@@ -354,7 +369,3 @@ section {
     flex: 1;
     margin: 15px;
   }
-
-.flex-row {
-    display: flex;
-}
